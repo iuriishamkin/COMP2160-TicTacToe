@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context="tru.shamkin.lab4.EnterNameActivity"
+    android:orientation="vertical">
+
+<EditText
+    android:id="@+id/enterNamePlayer1"
+    android:inputType="textPersonName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="4dp"
+    android:fontFamily="sans-serif-thin"
+    android:hint="@string/promt_player1"
+    android:maxLength="15" />
+<EditText
+    android:id="@+id/enterNamePlayer2"
+    android:inputType="textPersonName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="16dp"
+    android:fontFamily="sans-serif-thin"
+    android:hint="@string/promt_player2"
+    android:maxLength="15" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/save"
+        android:background="@drawable/menu_buttons"
+        style="@style/menu_buttons"
+        android:textSize="30sp" />
+</LinearLayout>

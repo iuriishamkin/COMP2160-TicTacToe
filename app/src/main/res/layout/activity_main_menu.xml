@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainMenuActivity"
+    android:background="@color/background">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundTintMode="add"
+        android:id="@+id/frameLogo"
+        android:layout_weight="2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logoView"
+            android:background="@drawable/logo_xox"
+            android:layout_gravity="center"
+            android:contentDescription="@string/logo_description"
+            android:adjustViewBounds="false"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="140dp"
+            android:layout_marginRight="140dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="100dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameButtons"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/play_game"
+                android:id="@+id/button1"
+                android:layout_gravity="center_horizontal"
+                style="@style/menu_buttons"
+                android:background="@drawable/menu_buttons"
+                android:allowUndo="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_names"
+                android:id="@+id/button2"
+                android:layout_gravity="center"
+                style="@style/menu_buttons"
+                android:background="@drawable/menu_buttons" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/standings"
+                android:id="@+id/button3"
+                style="@style/menu_buttons"
+                android:background="@drawable/menu_buttons" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

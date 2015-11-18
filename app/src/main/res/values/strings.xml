@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TicTacToe_by_Shamkin</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_title">Welcome to Tic Tac Toe</string>
+    <string name="title_activity_play_game">PlayGameActivity</string>
+    <string name="logo_description">application logo</string>
+
+    <string name="play_game">PLay Game!</string>
+    <string name="enter_names">Enter Names</string>
+    <string name="standings">Standings</string>
+    <string name="save">Save</string>
+    <string name="new_game">New Game</string>
+    <string name="play_again">PLay Again</string>
+
+    <string name="promt_player1">Player 1</string>
+    <string name="promt_player2">Player 2</string>
+    
+    <string name="PREFS_NAME">GameData</string>
+    <string name="OK_button">OK</string>
+</resources>

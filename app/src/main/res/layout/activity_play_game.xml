@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="tru.shamkin_brown.lab4.PlayGameActivity"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/currentPLayer"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.8">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grid"
+            android:layout_margin="50dp"
+            android:layout_gravity="center">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/iButton1"
+                    android:layout_weight="1"
+                    android:background="@color/background"
+                    android:adjustViewBounds="false"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:focusableInTouchMode="false"
+                    android:longClickable="false" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/iButton2"
+                    android:layout_weight="1"
+                    android:background="@color/background"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/iButton3"
+                    android:layout_weight="1"
+                    android:background="@color/background"
+                    android:layout_marginBottom="2dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/iButton4"
+                    android:layout_weight="1"
+                    android:background="@color/background"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/iButton5"
+                    android:layout_weight="1"
+                    android:background="@color/background"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/iButton6"
+                    android:layout_weight="1"
+                    android:background="@color/background"
+                    android:layout_marginBottom="2dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/iButton7"
+                    android:layout_weight="1"
+                    android:background="@color/background"
+                    android:layout_marginRight="2dp" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/iButton8"
+                    android:layout_weight="1"
+                    android:background="@color/background"
+                    android:layout_marginRight="2dp" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/iButton9"
+                    android:layout_weight="1"
+                    android:background="@color/background" />
+            </TableRow>
+        </TableLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_game"
+            android:id="@+id/button4"
+            android:layout_gravity="center"
+            style="@style/menu_buttons"
+            android:background="@drawable/menu_buttons"
+            android:textSize="30sp" />
+    </FrameLayout>
+
+</LinearLayout>
