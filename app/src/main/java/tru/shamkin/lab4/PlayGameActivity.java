@@ -277,6 +277,7 @@ public class PlayGameActivity extends AppCompatActivity {
             Log.d("SCORE", "PLayer 1 won " + player1Score + " times");
             player1Score ++;
             editor.putInt("player1Score", player1Score);
+            editor.apply();
 
         } else {
 //            playerYwin = true;
@@ -285,10 +286,11 @@ public class PlayGameActivity extends AppCompatActivity {
             player2Score = gameData.getInt("player2Score", 0);
             Log.d("SCORE", "PLayer 2 won " + player2Score + " times");
             player2Score ++;
-            editor.putInt("player1Score", player2Score);
+            editor.putInt("player2Score", player2Score);
+            editor.apply();
         }
 
-        editor.apply();
+//        editor.apply();
 
         intentEndGame.putExtra("winner", message);
         startActivity(intentEndGame);
