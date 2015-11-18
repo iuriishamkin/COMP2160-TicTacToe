@@ -14,3 +14,8 @@ width="200">      | <img src="https://github.com/iuriishamkin/COMP2160_TicTacToe
 
 
 ***
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
